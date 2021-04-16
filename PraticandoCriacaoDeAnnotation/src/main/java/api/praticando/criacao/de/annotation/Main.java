@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Main {
 
-    @Autowired
-    @Qualifier("applicationName")
-    private String name;
+//    @Autowired
+//    @Qualifier("applicationName")
+//    private String name;
 
     @Value("${application.name}")
     private String applicationName;
@@ -24,10 +24,10 @@ public class Main {
         return applicationName;
     }
 
-    @GetMapping("/name")
-    public String getName(){
-        return name;
-    }
+//    @GetMapping("/name")
+//    public String getName(){
+//        return name;
+//    }
 
     @GetMapping("/")
     public String theFirst(){
