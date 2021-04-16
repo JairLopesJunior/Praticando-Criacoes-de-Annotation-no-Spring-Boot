@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile("homolog")
 public class NameConfiguration {
 
     @Bean
+    @Homolog
     public CommandLineRunner onlyHolomog(){
         return args -> {
             System.out.println("VOCE ESTA VENDO ISTO POR QUE É AMBIENTE DE HOMOLOG :D");
